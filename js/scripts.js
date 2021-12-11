@@ -55,7 +55,7 @@
   /* Image Slider 2 - Swiper */
   var imageSliderOne = new Swiper('.image-slider-1', {
     autoplay: {
-      delay: 3000,
+      delay: 8000,
       disableOnInteraction: false,
     },
     loop: true,
