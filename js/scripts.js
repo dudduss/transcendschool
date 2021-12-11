@@ -68,12 +68,12 @@
   /* Image Slider - Swiper */
   var imageSliderTwo = new Swiper('.image-slider-2', {
     autoplay: {
-      delay: 2000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     loop: true,
     spaceBetween: 30,
-    slidesPerView: 5,
+    slidesPerView: 4,
     breakpoints: {
       // when window is <= 580px
       580: {
