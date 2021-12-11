@@ -76,7 +76,7 @@ h2 {
 }
 
 h3 {
-  color: #fff;
+  color: #000;
   font: 700 1.625rem/2.125rem 'Montserrat', sans-serif;
 }
 
@@ -905,8 +905,8 @@ input[type='checkbox'] {
 /*     05. Registration     */
 /****************************/
 .form-1 {
-  padding-top: 6rem;
-  padding-bottom: 6.25rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #186b69;
 }
 
