@@ -136,7 +136,6 @@ a:hover {
   color: #fff;
   font: 600 0.875rem/0 'Montserrat', sans-serif;
   text-decoration: none;
-  transition: all 0.2s;
 }
 
 .btn-solid-reg:hover {
@@ -664,8 +663,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-  width: 5.5625rem;
-  height: 1.875rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .navbar-custom .navbar-brand.logo-text {
