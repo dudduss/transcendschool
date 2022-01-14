@@ -1335,7 +1335,7 @@ input[type='checkbox'] {
 }
 
 .slider-2 .image-wrapper img {
-  border-radius: 0.25rem;
+  border-radius: 5rem;
 }
 
 .slider-2 .testimonial-text {
@@ -1343,7 +1343,7 @@ input[type='checkbox'] {
 }
 
 .slider-2 .testimonial-author {
-  color: #fff;
+  color: #000;
 }
 
 .slider-2 .swiper-button-prev,
@@ -2084,7 +2084,7 @@ a:hover.back-to-top {
 
   /* Testimonials */
   .slider-2 {
-    padding-bottom: 9rem;
+    padding-bottom: 1rem;
   }
 
   .slider-2 h3 {
