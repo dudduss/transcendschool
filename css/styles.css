@@ -1001,7 +1001,7 @@ input[type='checkbox'] {
 }
 
 .basic-2 h2 {
-  margin-bottom: 3.75rem;
+  margin-bottom: 1.75rem;
   text-align: center;
 }
 
@@ -1813,9 +1813,10 @@ a:hover.back-to-top {
 @media (min-width: 768px) {
   /* General Styles */
   .p-heading {
-    width: 85%;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
   }
   /* end of general styles */
 
