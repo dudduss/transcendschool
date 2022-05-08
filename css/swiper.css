@@ -280,9 +280,9 @@
 .swiper-pagination {
   position: absolute;
   text-align: center;
-  -webkit-transition: 300ms opacity;
-  -o-transition: 300ms opacity;
-  transition: 300ms opacity;
+  -webkit-transition: 500ms opacity;
+  -o-transition: 500ms opacity;
+  transition: 500ms opacity;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   z-index: 10;
