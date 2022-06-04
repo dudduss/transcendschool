@@ -15,6 +15,33 @@
         "https://conversations-widget.sendinblue.com/sib-conversations.js";
       if (d.head) d.head.appendChild(s);
     })(document, window, "SibConversations");
+
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return "";
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    (function () {
+      var partner = getParameterByName("partner");
+
+      window.onload = function () {
+        if (partner == "ahf") {
+          document.getElementById("ahf-pricing").style.display = "block";
+          document.getElementById("default-pricing").style.display = "none";
+          document.getElementById(
+            "ahf-pricing-installments"
+          ).style.display = "block";
+          document.getElementById(
+            "default-pricing-installments"
+          ).style.display = "none";
+          document.getElementById("ahf-logo").style.display = "inline-block";
+        }
+      };
+    })();
   </script>
   <!-- /Sendinblue Conversations {/literal} -->
   <head>
@@ -728,11 +755,20 @@
                 <i class="fas fa-lock"></i>
               </div>
               <div class="card-body">
-                <h4 class="card-title">All Upfront</h4>
-                <p>
-                  You pay $1,999 upfront. We'll cover your NMLS SAFE testing
-                  fees and pre-education requirements (national and state).
-                </p>
+                <div id="ahf-pricing" style="display: none">
+                  <h4 class="card-title"><s>$1999</s> $1749 All Upfront</h4>
+                  <p>
+                    You pay $1,749 upfront. We'll cover your NMLS SAFE testing
+                    fees and pre-education requirements (national and state).
+                  </p>
+                </div>
+                <div id="default-pricing">
+                  <h4 class="card-title">$1999 All Upfront</h4>
+                  <p>
+                    You pay $1,999 upfront. We'll cover your NMLS SAFE testing
+                    fees and pre-education requirements (national and state).
+                  </p>
+                </div>
               </div>
             </div>
             <div class="card">
@@ -740,14 +776,36 @@
                 <i class="fas fa-lock"></i>
               </div>
               <div class="card-body">
-                <h4 class="card-title">Payment Plan</h4>
-                <p>
-                  You pay 3 installments of $749 each month of the program.
-                  We'll cover your NMLS SAFE testing fees and pre-education
-                  requirements (national and state).
-                </p>
+                <div id="ahf-pricing-installments" style="display: none">
+                  <h4 class="card-title"><s>$749</s> $649 Installments</h4>
+                  <p>
+                    You pay 3 installments of $649 each month of the program.
+                    We'll cover your NMLS SAFE testing fees and pre-education
+                    requirements (national and state).
+                  </p>
+                </div>
+                <div id="default-pricing-installments">
+                  <h4 class="card-title">$749 Installments</h4>
+                  <p>
+                    You pay 3 installments of $749 each month of the program.
+                    We'll cover your NMLS SAFE testing fees and pre-education
+                    requirements (national and state).
+                  </p>
+                </div>
               </div>
             </div>
+
+            <div id="ahf-logo" class="card" style="display: none">
+              <div class="card-body">
+                <h4 class="card-title">in partnership with</h4>
+              </div>
+              <img
+                src="images/ahf.png"
+                alt="alternative"
+                style="max-width: 100%; max-height: 100%; padding: 30px"
+              />
+            </div>
+
             <!-- end of card -->
 
             <!-- Card -->
