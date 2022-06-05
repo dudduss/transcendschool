@@ -35,18 +35,36 @@
           document.getElementById(
             "default-pricing-installments"
           ).style.display = "none";
-          document.getElementById("default-job-placement").style.display = "none";
+          document.getElementById("default-job-placement").style.display =
+            "none";
           document.getElementById("default-competitors").style.display = "none";
           document.getElementById("default-partners").style.display = "none";
-          document.getElementById("default-transcend-employer-q1").style.display = "none";
-          document.getElementById("default-transcend-employer-q2").style.display = "none";
-          document.getElementById("default-for-partners-page").style.display = "none";
+          document.getElementById(
+            "default-transcend-employer-q1"
+          ).style.display = "none";
+          document.getElementById(
+            "default-transcend-employer-q2"
+          ).style.display = "none";
+          document.getElementById("default-for-partners-page").style.display =
+            "none";
+          document.getElementById("default-airtable-app").style.display =
+            "none";
+          document.getElementById("default-airtable-app1").style.display =
+            "none";
+          document.getElementById("default-airtable-app2").style.display =
+            "none";
+          document.getElementById("default-airtable-app3").style.display =
+            "none";
 
           // Show all of the ahf specific elements
           document.getElementById("ahf-pricing").style.display = "block";
           document.getElementById("ahf-logo").style.display = "inline-block";
           document.getElementById("ahf-pricing-installments").style.display =
             "block";
+          document.getElementById("ahf-airtable-app").style.display = "block";
+          document.getElementById("ahf-airtable-app1").style.display = "inline-block";
+          document.getElementById("ahf-airtable-app2").style.display = "inline-block";
+          document.getElementById("ahf-airtable-app3").style.display = "inline-block";
         }
       };
     })();
@@ -138,9 +156,18 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a
+              id="default-airtable-app"
               class="nav-link page-scroll"
               target="_blank"
               href="https://airtable.com/shr4afq90B1xS89zy"
+              >APPLY <span class="sr-only">(current)</span></a
+            >
+            <a
+              id="ahf-airtable-app"
+              style="display: none"
+              class="nav-link page-scroll"
+              target="_blank"
+              href="https://airtable.com/shrtnJ9TIdtWi60BC"
               >APPLY <span class="sr-only">(current)</span></a
             >
           </li>
@@ -194,11 +221,21 @@
                 months!
               </p>
               <a
+                id="default-airtable-app1"
                 class="btn-solid-lg page-scroll"
                 href="https://airtable.com/shr4afq90B1xS89zy"
                 target="_blank"
                 >APPLY</a
               >
+              <a
+                id="ahf-airtable-app1"
+                style="display: none"
+                class="btn-solid-lg page-scroll"
+                href="https://airtable.com/shrtnJ9TIdtWi60BC"
+                target="_blank"
+                >APPLY</a
+              >
+
               <a class="btn-outline-lg page-scroll" href="#instructor"
                 >DISCOVER</a
               >
@@ -629,12 +666,21 @@
         <div class="row">
           <div class="col-lg-12">
             <a
+              id="default-airtable-app2"
               class="btn-solid-reg"
               style="margin-left: 40%"
               href="https://airtable.com/shr4afq90B1xS89zy"
               target="_blank"
               >APPLY NOW</a
             >
+            <a
+            id="ahf-airtable-app2"
+            class="btn-solid-reg"
+            style="margin-left: 40%; display: none;"
+            href="https://airtable.com/shrtnJ9TIdtWi60BC"
+            target="_blank"
+            >APPLY NOW</a
+          >
           </div>
 
           <!-- end of col -->
@@ -839,7 +885,7 @@
           <!-- end of col -->
         </div>
         <!-- end of row -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12">
             <a
               class="btn-solid-reg"
@@ -848,7 +894,7 @@
               target="_blank"
               >APPLY NOW</a
             >
-          </div>
+          </div> -->
 
           <!-- end of col -->
         </div>
@@ -1033,11 +1079,20 @@
                 in school, we require that you are on you last semester.
               </p>
               <a
+                id="default-airtable-app3"
                 class="btn-solid-reg"
                 href="https://airtable.com/shr4afq90B1xS89zy"
                 target="_blank"
                 >APPLY NOW</a
               >
+              <a
+              id="ahf-airtable-app3"
+              style="display: none;"
+              class="btn-solid-reg"
+              href="https://airtable.com/shrtnJ9TIdtWi60BC"
+              target="_blank"
+              >APPLY NOW</a
+            >
             </div>
             <!-- end of text-container -->
           </div>
@@ -1128,7 +1183,12 @@
           </div>
           <!-- end of col -->
         </div>
-        <img id="default-competitors" class="img-fluid" src="images/competitors.png" alt="alternative" />
+        <img
+          id="default-competitors"
+          class="img-fluid"
+          src="images/competitors.png"
+          alt="alternative"
+        />
         <!-- end of row -->
       </div>
       <!-- end of container -->
